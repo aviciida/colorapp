@@ -33,27 +33,18 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="uPz-Ir-Zci"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="valueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="DGx-MN-UVX"/>
-                                </connections>
                             </slider>
                             <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="137" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="A4k-QA-3Uh">
                                 <rect key="frame" x="55" y="624" width="304" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="BpQ-c6-6n4"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="valueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="vnZ-hq-qlJ"/>
-                                </connections>
                             </slider>
                             <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="10O-ee-uso">
                                 <rect key="frame" x="55" y="720.5" width="304" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="6ba-pR-7Pu"/>
                                 </constraints>
-                                <connections>
-                                    <action selector="valueDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="FqA-ZA-eFh"/>
-                                </connections>
                             </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="RfF-OO-Bbu">
                                 <rect key="frame" x="174" y="497" width="66.5" height="20.5"/>
@@ -188,13 +179,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="blueValue" destination="pNE-1l-cFl" id="jen-5S-jbC"/>
-                        <outlet property="colorView" destination="Sje-h5-YA1" id="BqG-0a-ica"/>
-                        <outlet property="greenValue" destination="Xb2-hN-bK8" id="mJS-GR-pV2"/>
-                        <outlet property="hexStringLabel" destination="Jgi-jX-unw" id="lUp-WG-qay"/>
-                        <outlet property="redValue" destination="cUl-95-EF7" id="o1O-AW-9uA"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
