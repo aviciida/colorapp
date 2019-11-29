@@ -62,6 +62,7 @@ class ViewController: UIViewController {
         let _bHex = bHex.count == 1 ? "0" + bHex : bHex
         let hexString = "#" + _rHex + _gHex + _bHex
         hexStringLabel.text = hexString
+        hexStringLabel.textColor =         colorView.backgroundColor = UIColor(red: CGFloat(redValueStore/255), green: CGFloat(greenValueStore/255), blue: CGFloat(blueValueStore/255), alpha: 1.0)
     }
 }
 
