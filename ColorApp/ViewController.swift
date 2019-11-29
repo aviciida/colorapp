@@ -30,7 +30,20 @@ class ViewController: UIViewController {
 
     // ① Sliderの値の変更をリアルタイムに変更
     @IBAction func valueDidChange(_ sender: UISlider) {
-        
+        if sender.tag == 0 {
+            // Rの処理
+            redValue.text = String(Int(sender.value))
+            redValueStore = sender.value
+        } else if sender.tag == 1 {
+            // Gの処理
+            greenValue.text = String(Int(sender.value))
+            greenValueStore = sender.value
+        } else if sender.tag == 2 {
+            // Bの処理
+            blueValue.text = String(Int(sender.value))
+            blueValueStore = sender.value
+        }
+        updateColor()
     }
     
     // ② 変更された値の色に変更
