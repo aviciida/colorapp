@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     
     // ② 変更された値の色に変更
     func updateColor() {
-
+        colorView.backgroundColor = UIColor(red: CGFloat(redValueStore/255), green: CGFloat(greenValueStore/255), blue: CGFloat(blueValueStore/255), alpha: 1.0)
     }
     
     // ③ 現在のRGBの値からHEXを計算して表示
