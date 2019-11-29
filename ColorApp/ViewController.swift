@@ -44,6 +44,7 @@ class ViewController: UIViewController {
             blueValueStore = sender.value
         }
         updateColor()
+        toHex()
     }
     
     // ② 変更された値の色に変更
@@ -53,7 +54,14 @@ class ViewController: UIViewController {
     
     // ③ 現在のRGBの値からHEXを計算して表示
     func toHex() {
-
+        let rHex = String(Int(redValueStore), radix: 16)
+        let _rHex = rHex.count == 1 ? "0" + rHex : rHex
+        let gHex = String(Int(greenValueStore), radix: 16)
+        let _gHex = gHex.count == 1 ? "0" + gHex : gHex
+        let bHex = String(Int(blueValueStore), radix: 16)
+        let _bHex = bHex.count == 1 ? "0" + bHex : bHex
+        let hexString = "#" + _rHex + _gHex + _bHex
+        hexStringLabel.text = hexString
     }
 }
 
